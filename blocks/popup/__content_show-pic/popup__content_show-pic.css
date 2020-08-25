@@ -1,0 +1,16 @@
+.popup__content_show-pic {
+    width: auto; 
+    max-width: 80vw;
+    max-height: 80vh;
+    border-radius: 0;
+    margin: 0 0 0px 0;
+    padding: 0;
+    background-color: #0000;
+}
+  
+/* @media screen and (max-width: 540px) {
+    .popup__content_show-pic {
+      width: calc(100% - 60px);
+    }
+  } */
+
