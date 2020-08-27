@@ -1,5 +1,5 @@
 import Api from './Api'
-import createNewCard from './Card'
+import {createNewCard} from './script'
 
 const api = new Api;
 

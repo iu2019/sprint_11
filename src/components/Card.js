@@ -1,9 +1,9 @@
 import Api from './Api'
-import openPopupImg from './PhotoPopup'
+import {openPopupImg} from './script'
 
 const api = new Api;
 
-export class Card {
+export default class Card {
   constructor (name, link, likes, myLike, own, cardId, popupImg, template) {
       this.name = name;
       this.link = link;
@@ -139,9 +139,9 @@ export class Card {
         
   }
 
-  export const createNewCard = (name, link, likes, myLike, own, cardId) => {
-    const newCard = new Card (name, link, likes, myLike, own, cardId, openPopupImg, document.querySelector('.template.card').content)
-    // cardList.cards.push(newCard);
-    // return newCard.create();
-    return newCard;
-  }
+  // export const createNewCard = (name, link, likes, myLike, own, cardId) => {
+  //   const newCard = new Card (name, link, likes, myLike, own, cardId, openPopupImg, document.querySelector('.template.card').content)
+  //   // cardList.cards.push(newCard);
+  //   // return newCard.create();
+  //   return newCard;
+  // }

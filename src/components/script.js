@@ -1,13 +1,13 @@
 import UserInfo from './UserInfo'
 import PopupHolder from './Popup'
 import PhotoPopup from './PhotoPopup'
-import editProfile from './Global'
-import renderLoading from './Global'
+import {editProfile} from './Global'
+import {renderLoading} from './Global'
 import FormValidator from './FormValidator'
 import CardList from './CardList'
 import Card from './Card'
 import Api from './Api'
-import createNewCard from './Card'
+
 import '../pages/index.css'
 
 
@@ -27,18 +27,18 @@ userInfo.renderUser();
 
 const placesList = document.querySelector('.places-list');
 
-// const popupImg = new PhotoPopup (document.querySelector('.template.bigphoto').content);
+const popupImg = new PhotoPopup (document.querySelector('.template.bigphoto').content);
 
-// export const createNewCard = (name, link, likes, myLike, own, cardId) => {
-//   const newCard = new Card (name, link, likes, myLike, own, cardId, openPopupImg, document.querySelector('.template.card').content)
-//   // cardList.cards.push(newCard);
-//   // return newCard.create();
-//   return newCard;
-// }
+export const createNewCard = (name, link, likes, myLike, own, cardId) => {
+  const newCard = new Card (name, link, likes, myLike, own, cardId, openPopupImg, document.querySelector('.template.card').content)
+  // cardList.cards.push(newCard);
+  // return newCard.create();
+  return newCard;
+}
 
-// const openPopupImg = (pictureUrl) => {
-//   popupImg.popupImg (event, pictureUrl);
-// }
+const openPopupImg = (pictureUrl) => {
+  popupImg.popupImg (event, pictureUrl);
+}
 
 
 
