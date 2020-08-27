@@ -1,4 +1,8 @@
-class UserInfo {
+import Api from './Api'
+
+const api = new Api;
+
+export default class UserInfo {
     constructor (userInfoName, userInfoJob, userInfoAvatar, popupAuthor) {
       this.name = userInfoName;
       this.job = userInfoJob;

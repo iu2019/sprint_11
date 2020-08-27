@@ -1,4 +1,9 @@
-class CardList {
+import Api from './Api'
+import createNewCard from './Card'
+
+const api = new Api;
+
+export default class CardList {
     constructor (container, card) {
 
       this.placesList = container;

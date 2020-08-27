@@ -1,5 +1,5 @@
 
-class PhotoPopup {
+export default class PhotoPopup {
 
         constructor (template) {
             this.template = template;
@@ -38,4 +38,10 @@ class PhotoPopup {
             this.close();
 
         }
+}
+
+const popupImg = new PhotoPopup (document.querySelector('.template.bigphoto').content);
+
+export const openPopupImg = (pictureUrl) => {
+  popupImg.popupImg (event, pictureUrl);
 }

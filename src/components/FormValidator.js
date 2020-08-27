@@ -1,5 +1,5 @@
 
-class FormValidator {
+export default class FormValidator {
     constructor (popup, initState) { 
       this.popup = popup;
       this.initState = initState;     
@@ -119,5 +119,7 @@ class FormValidator {
     }
 
     
-
+    // export const formValidatorFunc = (form, initValue) => {
+    //   return new FormValidator (form, initValue)
+    // }
   

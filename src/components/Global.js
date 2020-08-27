@@ -1,5 +1,5 @@
 
-const editProfile = (popup, event) => {
+export const editProfile = (popup, event) => {
     
     event.preventDefault();
     userInfo.setUserInfo (popup, event);
@@ -9,7 +9,7 @@ const editProfile = (popup, event) => {
   
   }
 
-const  renderLoading = (isLoading, popup, normalText)=> {
+export const  renderLoading = (isLoading, popup, normalText)=> {
     if (isLoading) {
         popup.popupEl.querySelector('.popup__button').textContent = "Загрузка"
     }
@@ -17,3 +17,5 @@ const  renderLoading = (isLoading, popup, normalText)=> {
         popup.popupEl.querySelector('.popup__button').textContent = normalText
     }
   }
+
+
