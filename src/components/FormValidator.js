@@ -1,10 +1,19 @@
+// import {editProfile} from './UserInfo'
+// import {CardList, cardList} from './CardList'
+// import {userInfo} from './UserInfo'
 
 export default class FormValidator {
-    constructor (popup, initState) { 
+    constructor (popup, initState, eventListener, toBind) { 
+      // eventListener - заготовка для действительной функции eventListener, в зависимости от вида попапа
+      // toBind нужен только в случае popup.type === 'addCard', в других двух случаях он приходит 'undefined' и не используется
+      // оба параметра добавлены в проекте 11 для развязывания зависимостей
       this.popup = popup;
       this.initState = initState;     
       this.popupValidation = [];
       this.func = 'undefined';
+      this.eventListener = eventListener;
+      this.toBind = toBind;
+      
       popup.querySelectorAll('input').forEach((item, index) => this.popupValidation[index] = this.initState);
     }
   
@@ -90,13 +99,13 @@ export default class FormValidator {
         // выбор колбэка submit
         switch (popup.type) {
           case 'addCard':
-            this.func = cardList.addCardProc.bind(cardList);
+            this.func = this.eventListener.bind(this.toBind);
             break;
           case 'author':
-            this.func = editProfile.bind(event,popup);
+            this.func = this.eventListener.bind(event,popup);
             break;
           case 'newAvatar':
-            this.func = userInfo.newAvatar.bind(event, popup);
+            this.func = this.eventListener.bind(event, popup);
         }
         
         // слушатель кнопки submit

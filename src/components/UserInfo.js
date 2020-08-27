@@ -1,8 +1,10 @@
 import Api from './Api'
+import {PopupHolder} from './Popup'
+import {renderLoading} from './renderLoading'
 
 const api = new Api;
 
-export default class UserInfo {
+export class UserInfo {
     constructor (userInfoName, userInfoJob, userInfoAvatar, popupAuthor) {
       this.name = userInfoName;
       this.job = userInfoJob;
@@ -126,5 +128,22 @@ export default class UserInfo {
   }
 
 }
+
+
+export const userInfo = new UserInfo (document.querySelector('.user-info__name').textContent, document.querySelector('.user-info__job').textContent,"", popupAuthor);
+
+const editProfile = (popup, event) => {
+    
+  event.preventDefault();
+  userInfo.setUserInfo (popup, event);
+  // userInfo.updateUserInfo();
+  // event.target.reset();
+  // popup.close();
+
+}
+
+export const popupAuthor = new PopupHolder (true, 'author', document.querySelector('.template.author-details').content, editProfile, 'undefined'
+  // .bind(event,popup)
+);
 
 

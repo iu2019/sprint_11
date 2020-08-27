@@ -1,12 +1,13 @@
-import UserInfo from './UserInfo'
-import PopupHolder from './Popup'
-import PhotoPopup from './PhotoPopup'
-import {editProfile} from './Global'
-import {renderLoading} from './Global'
+import {UserInfo, userInfo, popupAuthor} from './UserInfo'
+import {PopupHolder} from './Popup'
+import {PhotoPopup} from './PhotoPopup'
+// import {editProfile} from './Global'
+import {renderLoading} from './renderLoading'
 import FormValidator from './FormValidator'
-import CardList from './CardList'
-import Card from './Card'
+import {CardList, cardList, popupNewCard} from './CardList'
+import {Card} from './Card'
 import Api from './Api'
+import {createNewCard} from './Card'
 
 import '../pages/index.css'
 
@@ -19,35 +20,37 @@ const avatarPlace = document.querySelector('.user-info__photo')
 //   return new FormValidator (form, initValue)
 // }
 
-const popupAuthor = new PopupHolder (true, 'author', document.querySelector('.template.author-details').content);
+// const popupAuthor = new PopupHolder (true, 'author', document.querySelector('.template.author-details').content);
 
-const userInfo = new UserInfo (document.querySelector('.user-info__name').textContent, document.querySelector('.user-info__job').textContent,"", popupAuthor);
+// const userInfo = new UserInfo (document.querySelector('.user-info__name').textContent, document.querySelector('.user-info__job').textContent,"", popupAuthor);
 
 userInfo.renderUser();
 
-const placesList = document.querySelector('.places-list');
+// const placesList = document.querySelector('.places-list');
 
-const popupImg = new PhotoPopup (document.querySelector('.template.bigphoto').content);
+// const popupImg = new PhotoPopup (document.querySelector('.template.bigphoto').content);
 
-export const createNewCard = (name, link, likes, myLike, own, cardId) => {
-  const newCard = new Card (name, link, likes, myLike, own, cardId, openPopupImg, document.querySelector('.template.card').content)
-  // cardList.cards.push(newCard);
-  // return newCard.create();
-  return newCard;
-}
+// export const createNewCard = (name, link, likes, myLike, own, cardId) => {
+//   const newCard = new Card (name, link, likes, myLike, own, cardId, openPopupImg, document.querySelector('.template.card').content)
+//   // cardList.cards.push(newCard);
+//   // return newCard.create();
+//   return newCard;
+// }
 
-const openPopupImg = (pictureUrl) => {
-  popupImg.popupImg (event, pictureUrl);
-}
+// const openPopupImg = (pictureUrl) => {
+//   popupImg.popupImg (event, pictureUrl);
+// }
 
 
 
-const cardList = new CardList(placesList, createNewCard);
+// const cardList = new CardList(placesList, createNewCard);
 cardList.getInitialCards();
 
 
-const popupNewCard = new PopupHolder (false, 'addCard',document.querySelector('.template.new-card').content);
-const popupAvatar = new PopupHolder (false, 'newAvatar', document.querySelector('.template.new-avatar').content);
+// const popupNewCard = new PopupHolder (false, 'addCard',document.querySelector('.template.new-card').content);
+const popupAvatar = new PopupHolder (false, 'newAvatar', document.querySelector('.template.new-avatar').content, userInfo.newAvatar, 'undefined'
+  // .bind(event, popup)
+);
 
 function addButtonHandler() {
 // открываем попап

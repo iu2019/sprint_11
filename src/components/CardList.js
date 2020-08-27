@@ -1,9 +1,11 @@
 import Api from './Api'
-import {createNewCard} from './script'
+import {createNewCard} from './Card'
+import {PopupHolder} from './Popup'
+import {renderLoading} from './renderLoading'
 
 const api = new Api;
 
-export default class CardList {
+export class CardList {
     constructor (container, card) {
 
       this.placesList = container;
@@ -101,9 +103,13 @@ export default class CardList {
     
     }
 
-    
-
-
 
 }
 
+const placesList = document.querySelector('.places-list');
+
+export const cardList = new CardList(placesList, createNewCard);
+
+export const popupNewCard = new PopupHolder (false, 'addCard',document.querySelector('.template.new-card').content, cardList.addCardProc, cardList
+  // .bind(cardList)
+);
