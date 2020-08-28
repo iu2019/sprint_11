@@ -44,6 +44,7 @@ export class CardList {
       // закрывавем попап
       // popupNewCard.close(event);
 
+      
     }
 
     // updateCardListAndRender = (card) => {
