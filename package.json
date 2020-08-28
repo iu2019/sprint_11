@@ -9,10 +9,11 @@
     "url": "git+https://github.com/iu2019/sprint_11.git"
   },
   "scripts": {
-    "dev": "webpack-dev-server --mode development --open",
-    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --watch",
+    "build": "cross-env NODE_ENV=production rimraf dist && webpack --mode production",
     "watch": "cross-env NODE_ENV=development webpack --mode development --watch",
-    "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open"
+    "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open",
+    "deploy": "cross-env NODE_ENV=production gh-pages -d dist"
   },
   "keywords": [
     "js",
