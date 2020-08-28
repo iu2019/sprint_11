@@ -3,11 +3,13 @@ export default class Api {
         this.token = 'f6900d89-354c-4fff-a461-d00c77a9e45d';
         this.group = 'cohort12';
         this.me = 'IU';
+        this.serverUrl = NODE_ENV === 'development' ? 'http://nomoreparties.co' : 'https://nomoreparties.co';
+
     }
 
     getInfo (field) {
 
-        return fetch(`https://nomoreparties.co/${this.group}/${field}`, {
+        return fetch(`${this.serverUrl}/${this.group}/${field}`, {
 
         method: 'GET',
 
@@ -29,7 +31,7 @@ export default class Api {
 
     patchInfo (field, body) {
 
-        return fetch(`https://nomoreparties.co/${this.group}/${field}`, {
+        return fetch(`${this.serverUrl}/${this.group}/${field}`, {
 
         method: 'PATCH',
 
@@ -52,7 +54,7 @@ export default class Api {
 
     postInfo (field, body) {
 
-        return fetch(`https://nomoreparties.co/${this.group}/${field}`, {
+        return fetch(`${this.serverUrl}/${this.group}/${field}`, {
 
         method: 'POST',
 
@@ -74,7 +76,7 @@ export default class Api {
     }
 
     putInfo (field) {
-        return fetch(`https://nomoreparties.co/${this.group}/${field}`, {
+        return fetch(`${this.serverUrl}/${this.group}/${field}`, {
 
         method: 'PUT',
 
@@ -97,7 +99,7 @@ export default class Api {
 
     deleteInfo (field) {
 
-        return fetch(`https://nomoreparties.co/${this.group}/${field}`, {
+        return fetch(`${this.serverUrl}/${this.group}/${field}`, {
 
         method: 'DELETE',
 
