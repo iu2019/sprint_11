@@ -1,4 +1,4 @@
-import {userInfo} from './UserInfo'
+// import {userInfo} from './UserInfo'
 
 // export const editProfile = (popup, event) => {
     
