@@ -1,4 +1,10 @@
-class UserInfo {
+import Api from './Api'
+import {PopupHolder} from './Popup'
+import {renderLoading} from './renderLoading'
+
+const api = new Api;
+
+export class UserInfo {
     constructor (userInfoName, userInfoJob, userInfoAvatar, popupAuthor) {
       this.name = userInfoName;
       this.job = userInfoJob;
@@ -68,7 +74,7 @@ class UserInfo {
     renderUser () {
       api.getInfo ('users/me')
       .then (res => {
-          // console.log(res);
+          
           this.assignUserInfo(res.name, res.about, res.avatar);
           this.updateUserInfo();
       })
@@ -82,8 +88,7 @@ class UserInfo {
       this.setUserAvatar (popup, event);
 
       event.target.reset();
-      // popup.close();
-
+      
     }
 
 
@@ -96,7 +101,7 @@ class UserInfo {
             }) )
 
       .then (json => {
-          // console.log(json);
+          
           this.assignUserInfo (json.name, json.about, json.avatar);
           this.updateUserInfo ();
           popup.close(event);
@@ -112,7 +117,7 @@ class UserInfo {
       }) )
 
       .then (json => {
-          // console.log(json);
+          
           this.assignUserInfo (this.name, this.job, json.avatar);
           this.updateUserInfo();
           popup.close(event);
@@ -122,5 +127,20 @@ class UserInfo {
   }
 
 }
+
+
+export const userInfo = new UserInfo (document.querySelector('.user-info__name').textContent, document.querySelector('.user-info__job').textContent,"", popupAuthor);
+
+const editProfile = (popup, event) => {
+    
+  event.preventDefault();
+  userInfo.setUserInfo (popup, event);
+  
+
+}
+
+export const popupAuthor = new PopupHolder (true, 'author', document.querySelector('.template.author-details').content, editProfile, 'undefined'
+  
+);
 
 

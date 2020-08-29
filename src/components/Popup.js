@@ -1,6 +1,7 @@
+import FormValidator from './FormValidator'
 
-class PopupHolder {
-    constructor (initState, type, template) {
+export class PopupHolder {
+    constructor (initState, type, template, eventListener, toBind) {
 
       this.initState = initState;
       this.type = type;
@@ -8,7 +9,7 @@ class PopupHolder {
 
       // div popup элемент темплейта
       this.popupEl = this.template.cloneNode(true).querySelector('.popup');
-      this.formVal = formValidator(this.popupEl, this.initState);
+      this.formVal = new FormValidator(this.popupEl, this.initState, eventListener, toBind);
 
       document.querySelector('.root').appendChild(this.popupEl);
 

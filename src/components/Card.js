@@ -1,4 +1,9 @@
-class Card {
+import Api from './Api'
+import {openPopupImg} from './PhotoPopup'
+
+const api = new Api;
+
+export class Card {
   constructor (name, link, likes, myLike, own, cardId, popupImg, template) {
       this.name = name;
       this.link = link;
@@ -96,7 +101,7 @@ class Card {
     putLike (card) {
       api.putInfo (`cards/like/${card.cardId}`)
       .then ((result) => {
-          // console.log(result);
+          
           this.likes = result.likes.length;
           this.myLike = true;
           this.cardElement.querySelector('.place-card__like-icon').classList.add('place-card__like-icon_liked');
@@ -110,7 +115,7 @@ class Card {
         api.deleteInfo (`cards/like/${card.cardId}`)
           
         .then (result => {
-            // console.log(result);
+            
             this.likes = result.likes.length;
             this.myLike = false;
             this.cardElement.querySelector('.place-card__like-icon').classList.remove('place-card__like-icon_liked');
@@ -124,12 +129,19 @@ class Card {
     deleteCard (card) {
       api.deleteInfo (`cards/${card.cardId}`)
       .then (res => {
-        // console.log(res)
-        
+                
         this.removeCardEventListeners();
         this.cardElement.remove();
       })
       .catch (err=>console.log('Ошибка ', err))
     }
         
+  }
+
+  
+  
+  export const createNewCard = (name, link, likes, myLike, own, cardId) => {
+    const newCard = new Card (name, link, likes, myLike, own, cardId, openPopupImg, document.querySelector('.template.card').content)
+    
+    return newCard;
   }

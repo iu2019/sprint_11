@@ -1,4 +1,11 @@
-class CardList {
+import Api from './Api'
+import {createNewCard} from './Card'
+import {PopupHolder} from './Popup'
+import {renderLoading} from './renderLoading'
+
+const api = new Api;
+
+export class CardList {
     constructor (container, card) {
 
       this.placesList = container;
@@ -29,29 +36,17 @@ class CardList {
       const name = popupForm.querySelector('.name');
       const link = popupForm.querySelector('.url');
       // создаем новую карточку и сразу добавляем в список
-      //const card = this.addCard(name.value, link.value, 0, false, true, this.cardId);
-      //api.transmitNewCard (card, popupNewCard, event);
+      
       this.transmitNewCard (name.value, link.value, popupNewCard, event);
-      // сбрасываем форму
-      // popupForm.reset();
-      // закрывавем попап
-      // popupNewCard.close(event);
-
+            
     }
 
-    // updateCardListAndRender = (card) => {
-    //   const instance = this.cards.find ( (item) => {return item.cardId === card.cardId});
-    //   instance.likes = card.likes;
-    //   instance.myLike = card.myLike;
-    //   instance.renderLike();
-    // }
-
     getInitialCards () {
-      // let initialCards =[];
+      
       api.getInfo ('cards')
       
       .then ((res) => {
-          // console.log(res);
+          
           Array.from(res).map ((item, index) => {
               this.cards.push(
 
@@ -89,16 +84,19 @@ class CardList {
           popupForm.reset();
           popup.close(event);
           
-          // console.log(res);
       })
       .catch (err=>console.log('Ошибка ', err))
       .finally (() => renderLoading(false, popup, "+"));
     
     }
 
-    
-
-
 
 }
 
+const placesList = document.querySelector('.places-list');
+
+export const cardList = new CardList(placesList, createNewCard);
+
+export const popupNewCard = new PopupHolder (false, 'addCard',document.querySelector('.template.new-card').content, cardList.addCardProc, cardList
+  
+);

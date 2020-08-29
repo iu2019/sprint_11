@@ -1,10 +1,15 @@
-
-class FormValidator {
-    constructor (popup, initState) { 
+export default class FormValidator {
+    constructor (popup, initState, eventListener, toBind) { 
+      // eventListener - заготовка для действительной функции eventListener, в зависимости от вида попапа
+      // toBind нужен только в случае popup.type === 'addCard', в других двух случаях он приходит 'undefined' и не используется
+      // оба параметра добавлены в проекте 11 для развязывания зависимостей
       this.popup = popup;
       this.initState = initState;     
       this.popupValidation = [];
       this.func = 'undefined';
+      this.eventListener = eventListener;
+      this.toBind = toBind;
+      
       popup.querySelectorAll('input').forEach((item, index) => this.popupValidation[index] = this.initState);
     }
   
@@ -90,17 +95,17 @@ class FormValidator {
         // выбор колбэка submit
         switch (popup.type) {
           case 'addCard':
-            this.func = cardList.addCardProc.bind(cardList);
+            this.func = this.eventListener.bind(this.toBind);
             break;
           case 'author':
-            this.func = editProfile.bind(event,popup);
+            this.func = this.eventListener.bind(event,popup);
             break;
           case 'newAvatar':
-            this.func = userInfo.newAvatar.bind(event, popup);
+            this.func = this.eventListener.bind(event, popup);
         }
         
         // слушатель кнопки submit
-        popupForm.addEventListener('submit', this.func //,{once:true}
+        popupForm.addEventListener('submit', this.func 
         );
         
       }
@@ -108,16 +113,16 @@ class FormValidator {
     resetEventListeners = (popup) => {
         const popupForm = popup.popupEl.querySelector('.popup__form');
         popupForm.removeEventListener('input', this.getInput);
-        popup.popupEl.querySelector('.popup__close').removeEventListener('click', popup.close  //, {once:true}
+        popup.popupEl.querySelector('.popup__close').removeEventListener('click', popup.close  
         );
         
         // слушатель кнопки submit
-        popupForm.removeEventListener('submit', this.func //, {once:true}
+        popupForm.removeEventListener('submit', this.func 
         );
       }
         
     }
 
     
-
+    
   
