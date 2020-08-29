@@ -7,12 +7,6 @@ const WebpackMd5Hash = require('webpack-md5-hash');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 const isDev = process.env.NODE_ENV === 'development';
-const isProd = !isDev;
-
-new webpack.DefinePlugin({
-    'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
-})
-
 
 module.exports = {
     entry: path.resolve(__dirname, 'src/components/script.js'),
@@ -29,7 +23,15 @@ module.exports = {
             },
             {
                 test: /\.css$/i,
-                use: [(isDev ? 'style-loader' : MiniCssExtractPlugin.loader), 'css-loader', 'postcss-loader']
+                use: [(isDev ? 'style-loader' : MiniCssExtractPlugin.loader), 
+                    {
+                        loader:'css-loader',
+                        options: {
+                            importLoaders: 2
+                        }                    
+
+                    },
+                    'postcss-loader']
             },
             {
                 test: /\.(woff|woff2|ttf)$/,
@@ -46,7 +48,27 @@ module.exports = {
                     'file-loader?name=./images/[name].[ext]&esModule=false',
                     {
                         loader: 'image-webpack-loader',
-                        options: {}
+                        options: {
+                            mozjpeg: {
+                              progressive: true,
+                              quality: 65
+                            },
+                            // optipng.enabled: false will disable optipng
+                            optipng: {
+                              enabled: true,
+                            },
+                            pngquant: {
+                              quality: [0.65, 0.90],
+                              speed: 4
+                            },
+                            gifsicle: {
+                              interlaced: true,
+                            },
+                            // the webp option will enable WEBP
+                            webp: {
+                              quality: 75
+                            }
+                          }
                     },
                 ]
             }
@@ -70,6 +92,9 @@ module.exports = {
             canPrint: true
 
 
+        }),
+        new webpack.DefinePlugin({
+            'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
         })
     ]
 };

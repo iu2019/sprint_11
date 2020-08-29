@@ -101,7 +101,7 @@ export class Card {
     putLike (card) {
       api.putInfo (`cards/like/${card.cardId}`)
       .then ((result) => {
-          // console.log(result);
+          
           this.likes = result.likes.length;
           this.myLike = true;
           this.cardElement.querySelector('.place-card__like-icon').classList.add('place-card__like-icon_liked');
@@ -115,7 +115,7 @@ export class Card {
         api.deleteInfo (`cards/like/${card.cardId}`)
           
         .then (result => {
-            // console.log(result);
+            
             this.likes = result.likes.length;
             this.myLike = false;
             this.cardElement.querySelector('.place-card__like-icon').classList.remove('place-card__like-icon_liked');
@@ -129,8 +129,7 @@ export class Card {
     deleteCard (card) {
       api.deleteInfo (`cards/${card.cardId}`)
       .then (res => {
-        // console.log(res)
-        
+                
         this.removeCardEventListeners();
         this.cardElement.remove();
       })
@@ -143,7 +142,6 @@ export class Card {
   
   export const createNewCard = (name, link, likes, myLike, own, cardId) => {
     const newCard = new Card (name, link, likes, myLike, own, cardId, openPopupImg, document.querySelector('.template.card').content)
-    // cardList.cards.push(newCard);
-    // return newCard.create();
+    
     return newCard;
   }

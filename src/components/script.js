@@ -16,38 +16,10 @@ const userInfoButton = document.querySelector('.user-info__button');
 const editButton = document.querySelector('.user-info__edit-button');
 const avatarPlace = document.querySelector('.user-info__photo')
 
-// export const formValidatorFunc = (form, initValue) => {
-//   return new FormValidator (form, initValue)
-// }
-
-// const popupAuthor = new PopupHolder (true, 'author', document.querySelector('.template.author-details').content);
-
-// const userInfo = new UserInfo (document.querySelector('.user-info__name').textContent, document.querySelector('.user-info__job').textContent,"", popupAuthor);
-
 userInfo.renderUser();
 
-// const placesList = document.querySelector('.places-list');
-
-// const popupImg = new PhotoPopup (document.querySelector('.template.bigphoto').content);
-
-// export const createNewCard = (name, link, likes, myLike, own, cardId) => {
-//   const newCard = new Card (name, link, likes, myLike, own, cardId, openPopupImg, document.querySelector('.template.card').content)
-//   // cardList.cards.push(newCard);
-//   // return newCard.create();
-//   return newCard;
-// }
-
-// const openPopupImg = (pictureUrl) => {
-//   popupImg.popupImg (event, pictureUrl);
-// }
-
-
-
-// const cardList = new CardList(placesList, createNewCard);
 cardList.getInitialCards();
 
-
-// const popupNewCard = new PopupHolder (false, 'addCard',document.querySelector('.template.new-card').content);
 const popupAvatar = new PopupHolder (false, 'newAvatar', document.querySelector('.template.new-avatar').content, userInfo.newAvatar, 'undefined'
   // .bind(event, popup)
 );

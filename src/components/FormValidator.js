@@ -1,7 +1,3 @@
-// import {editProfile} from './UserInfo'
-// import {CardList, cardList} from './CardList'
-// import {userInfo} from './UserInfo'
-
 export default class FormValidator {
     constructor (popup, initState, eventListener, toBind) { 
       // eventListener - заготовка для действительной функции eventListener, в зависимости от вида попапа
@@ -109,7 +105,7 @@ export default class FormValidator {
         }
         
         // слушатель кнопки submit
-        popupForm.addEventListener('submit', this.func //,{once:true}
+        popupForm.addEventListener('submit', this.func 
         );
         
       }
@@ -117,18 +113,16 @@ export default class FormValidator {
     resetEventListeners = (popup) => {
         const popupForm = popup.popupEl.querySelector('.popup__form');
         popupForm.removeEventListener('input', this.getInput);
-        popup.popupEl.querySelector('.popup__close').removeEventListener('click', popup.close  //, {once:true}
+        popup.popupEl.querySelector('.popup__close').removeEventListener('click', popup.close  
         );
         
         // слушатель кнопки submit
-        popupForm.removeEventListener('submit', this.func //, {once:true}
+        popupForm.removeEventListener('submit', this.func 
         );
       }
         
     }
 
     
-    // export const formValidatorFunc = (form, initValue) => {
-    //   return new FormValidator (form, initValue)
-    // }
+    
   
