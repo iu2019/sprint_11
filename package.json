@@ -1,0 +1,22 @@
+{
+  "name": "diploma_frontend",
+  "version": "1.0.0",
+  "description": "\u0016Yandex Praktikum Diploma - Frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iu2019/diploma_frontend.git"
+  },
+  "keywords": [
+    "news"
+  ],
+  "author": "IU",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iu2019/diploma_frontend/issues"
+  },
+  "homepage": "https://github.com/iu2019/diploma_frontend#readme"
+}
