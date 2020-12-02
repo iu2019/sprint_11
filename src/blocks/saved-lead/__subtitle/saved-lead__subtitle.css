@@ -1,0 +1,15 @@
+.saved-lead__subtitle {
+    margin: 0 0 0 0;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(26, 27, 34, .5);
+    align-self: flex-start;
+}
+
+@media (max-width: 640px) {
+    .saved-lead__subtitle {
+        font-size: 12px;
+    
+    }
+}

@@ -1,0 +1,18 @@
+@import url(./__title/saved-lead__title.css);
+@import url(./__subtitle/saved-lead__subtitle.css);
+@import url(./__keywords/saved-lead__keywords.css);
+@import url(./__header-container/saved-lead__header-container.css);
+
+
+.saved-lead {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* margin-left: 104px; */
+    align-self: stretch;
+    padding-top: 1.67rem;
+    
+    background-color: white;
+}
+

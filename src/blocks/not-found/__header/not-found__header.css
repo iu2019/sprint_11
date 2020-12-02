@@ -1,0 +1,9 @@
+.not-found__header {
+    text-align: center;
+
+    font-family: RobotoSlab;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.25rem;
+    color: #1A1B22;
+}

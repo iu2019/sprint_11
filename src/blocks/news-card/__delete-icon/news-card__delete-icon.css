@@ -1,0 +1,37 @@
+.news-card__delete-icon {
+  background: url(../../../images/delete-inactive.svg) center no-repeat;
+  background-color: #FFF;
+  border: none;
+  width: 1.67rem;
+  height: 1.67rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  display: block;
+
+  border-radius: 0.33rem;
+}
+
+.news-card__delete-icon:hover {
+  background: url(../../../images/delete-active.svg) center no-repeat;
+}
+
+.news-card__delete-icon_disabled {
+  display: none;
+}
+
+.news-card__delete-icon:hover + .news-card__message{
+  display: flex;
+}
+
+/* .news-card:hover .news-card__delete-icon {
+  display: block;
+} */
+
+
+@media (max-width: 1050px) {
+  .news-card__delete-icon:hover + .news-card__message{
+    display: none;
+  }
+}

@@ -1,0 +1,28 @@
+.popup-mobile__list-item {
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    padding: 0 11px;
+    margin: 0 6px;
+    align-self: flex-start;
+    justify-self: center;
+    text-align: end;
+
+    font-size: 18px;
+    line-height: 56px;
+    font-family: Roboto;
+    font-weight: 600;
+    
+}
+
+.popup-mobile__list-item_outline {
+    border: 1px solid white;
+    border-radius: 100px;
+    line-height: 40px;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.popup-mobile__list-item:hover {
+    text-decoration: underline;
+}

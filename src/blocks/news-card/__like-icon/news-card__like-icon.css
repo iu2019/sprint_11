@@ -1,0 +1,39 @@
+.news-card__like-icon {
+  background: url(../../../images/like_normal.svg) center no-repeat;
+  background-color: #FFF;
+  border: none;
+  width: 1.67rem;
+  height: 1.67rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  /* transition: transform .3s linear; */
+
+  border-radius: 0.33rem;
+}
+
+.news-card__like-icon_liked {
+  background-image: url(../../../images/like_marked.svg) ;
+  
+ 
+}
+
+.news-card__like-icon:hover {
+  background-image: url(../../../images/like_hover.svg) ;
+  /* transform: scale(1.03); */
+}
+
+.news-card__like-icon:hover + .news-card__message{
+  display: flex;
+}
+
+/* .news-card:hover .news-card__like-icon {
+  display: block;
+} */
+
+@media (max-width: 1050px) {
+  .news-card__like-icon:hover + .news-card__message{
+    display: none;
+  }
+}

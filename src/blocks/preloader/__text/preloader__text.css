@@ -1,0 +1,10 @@
+.preloader__text {
+    font-family: Roboto;
+    font-size: .75rem;
+    line-height: 1rem;
+    color: #B6BCBF;
+
+    margin-top: -65px;
+}
+    /* transform: translate(0px, calc( 100px - 40vw) );
+} */

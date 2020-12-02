@@ -1,0 +1,60 @@
+@import url('./__link/footer__link.css');
+@import url('./__copyright/footer__copyright.css');
+@import url('./__link-container/footer__link-container.css');
+@import url('./__top-container/footer__top-container.css');
+@import url('./__nav/footer__nav.css');
+@import url('./__list-item/footer__list-item.css');
+@import url('./__social/footer__social.css');
+@import url('../../vendor/fonts.css');
+
+.footer {
+    margin: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    
+    width: 100%;
+    
+    font-family: 'Inter', 'Roboto', 'RobotoSlab', 'SourceSansPro' ;
+}
+
+
+@media (max-width:640px) {
+    .footer {
+        flex-direction: column;
+    }
+}
+
+/* @media (max-width:1290px) {
+    .footer {
+        width: 94%;
+        margin-top: 226px;
+    }
+}
+
+@media (max-width:1173px) {
+    .footer {
+        width: 90%;
+        margin-top: 196px;
+    }
+}
+
+@media (max-width: 780px) { 
+    .footer {
+        margin-top: 0;
+    }
+}
+
+@media (max-width:703px) {
+    .footer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:360px) {
+    .footer {
+        margin-top: 0px;
+    }
+} */

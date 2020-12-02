@@ -1,0 +1,13 @@
+.footer__social {
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 1rem;
+}
+
+@media (max-width:640px) {
+    .footer__social {
+        margin: 0 16px 0 0;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

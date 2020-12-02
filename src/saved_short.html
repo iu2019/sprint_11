@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NewsAnalyzer</title>
+    <!-- <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css%>"> -->
+    <link rel="icon" href="./images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./pages/index.css">
+  </head>
+
+  <body class="body">
+ 
+    <div class="saved">
+
+      <!-- DESKTOP -->
+      <page class="page screen_desktop">
+        
+        <header class="header header_theme_light screen_desktop header_logged ">
+            
+          <nav class="header header_theme_light">
+            <div class="header__placeholder">
+              <p class="header__logo header_theme_light">NewsExplorer</p>
+              <ul class="header__link-container">
+                <li class="header__list-item ">
+                  <a class="header__list-item header_theme_light " href="index.html">Главная</a>
+                </li>
+                <li class="header__list-item ">
+                  <a class="header__list-item header_theme_light header__list-item_active" href="saved.html">Сохранённые статьи</a>
+                </li>
+                <li class="header__list-item ">
+                  <a class="header__link header_theme_light header__link_outline" href="index.html">Грета&nbsp;
+                    <img class="header__exit-logo" src="./images/logout_black.svg" alt="exit"> <!-- Exit -->
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+      
+        </header>
+
+        <section class="saved-lead screen_desktop">
+                           
+            <div class="saved-lead__header-container">
+              <h1 class="saved-lead__subtitle">Сохранённые статьи</h1>
+              <h2 class="saved-lead__title">Грета, у вас 5 сохранённых статей</h2>
+              <h3 class="saved-lead__keywords">По ключевым словам: <span class="bold">Природа</span>, <span class="bold">Тайга</span> и <span class="bold">2-м другим</span></h3>
+            </div>  
+            
+            <div class="saved__results-container">
+            <div class="saved__results-narrow-container">
+            <div class="search-results__placeholder">
+
+            <!-- Классы тэгов button со словом message в названии по умолчанию выключены. Поставьте класс enabled, чтобы включить   -->
+            <!-- Классы тэгов button со словом icon в названии по умолчанию включены. Поставьте класс disabled, чтобы выключить   -->
+          
+            <div class="news-card">
+              <div class="news-card__image news-card__image_example_1" >
+                <button class="news-card__message news-card__message_position_left enabled">
+                  <p class="news-card__comment">Природа</p>
+                </button>
+              
+                <button class="news-card__delete-icon "></button>
+                <button class="news-card__message ">
+                  <p class="news-card__comment">Убрать из сохраненных</p>
+                </button>
+
+                <button class="news-card__like-icon disabled"></button>
+                <button class="news-card__message ">
+                  <p class="news-card__comment ">Войдите, чтобы сохранять статьи</p>
+                </button>
+              </div>
+            
+              <div class="news-card__text-container">
+                <div class="news-card__date">2 августа, 2019</div>
+                
+                <h3 class="news-card__name" >Национальное достояние – парки</h3>
+                <p class="news-card__text">
+                    В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
+                    национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
+                </p>
+                <div class="news-card__source">ЛЕНТА.РУ</div>
+
+                </div>
+                
+            </div>
+
+            <div class="news-card">
+              <div class="news-card__image news-card__image_example_2" >
+                <button class="news-card__message news-card__message_position_left enabled">
+                  <p class="news-card__comment">Природа</p>
+                </button>
+              
+                <button class="news-card__delete-icon "></button>
+                <button class="news-card__message ">
+                  <p class="news-card__comment">Убрать из сохраненных</p>
+                </button>
+
+                <button class="news-card__like-icon disabled"></button>
+                <button class="news-card__message ">
+                  <p class="news-card__comment ">Войдите, чтобы сохранять статьи</p>
+                </button>
+              </div>
+
+              <div class="news-card__text-container">
+                <div class="news-card__date">2 августа, 2019</div>
+              
+                <h3 class="news-card__name" >Лесные огоньки: история одной фотографии</h3>
+                <p class="news-card__text">
+                  Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть
+                  ускользающую красоту одного из местных чудес природы.
+                </p>
+                <div class="news-card__source">МЕДУЗА</div>
+                
+              </div>
+            </div>
+
+            <div class="news-card">
+              <div class="news-card__image news-card__image_example_3" >
+                <button class="news-card__message news-card__message_position_left enabled">
+                  <p class="news-card__comment">Тайга</p>
+                </button>
+
+                <button class="news-card__delete-icon "></button>
+                <button class="news-card__message ">
+                  <p class="news-card__comment">Убрать из сохраненных</p>
+                </button>
+
+                <button class="news-card__like-icon disabled"></button>
+                <button class="news-card__message ">
+                  <p class="news-card__comment ">Войдите, чтобы сохранять статьи</p>
+                </button>
+              </div>
+
+              <div class="news-card__text-container">
+                <div class="news-card__date">2 августа, 2019</div>
+              
+                <h3 class="news-card__name" >«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+                <p class="news-card__text">
+                    Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости
+                    их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...
+                </p>
+                <div class="news-card__source">РИА</div>
+              </div>
+            </div>
+
+            <div class="news-card">
+              <div class="news-card__image news-card__image_example_4" >
+                <button class="news-card__message news-card__message_position_left enabled">
+                    <p class="news-card__comment">Парки</p>
+                </button>
+
+                <button class="news-card__delete-icon "></button>
+                <button class="news-card__message ">
+                  <p class="news-card__comment">Убрать из сохраненных</p>
+                </button>
+
+                <button class="news-card__like-icon disabled"></button>
+                <button class="news-card__message ">
+                  <p class="news-card__comment ">Войдите, чтобы сохранять статьи</p>
+                </button>
+              </div>
+
+              <div class="news-card__text-container">
+                <div class="news-card__date">2 августа, 2019</div>
+                
+                <h3 class="news-card__name" >Национальное достояние – парки</h3>
+                <p class="news-card__text">
+                    В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
+                    национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
+                </p>
+                <div class="news-card__source">ЛЕНТА.РУ</div>
+              </div>
+            </div>
+
+            <div class="news-card">
+              <div class="news-card__image news-card__image_example_5" >
+                <button class="news-card__message news-card__message_position_left enabled">
+                  <p class="news-card__comment">Фотография</p>
+                </button>
+
+                <button class="news-card__delete-icon "></button>
+                <button class="news-card__message ">
+                  <p class="news-card__comment">Убрать из сохраненных</p>
+                </button>
+
+                <button class="news-card__like-icon disabled"></button>
+                <button class="news-card__message ">
+                  <p class="news-card__comment ">Войдите, чтобы сохранять статьи</p>
+                </button>
+              </div>
+
+              <div class="news-card__text-container">
+                <div class="news-card__date">2 августа, 2019</div>
+                
+                  <h3 class="news-card__name" >Лесные огоньки: история одной фотографии</h3>
+                  <p class="news-card__text">
+                    Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть
+                    ускользающую красоту одного из местных чудес природы.
+                  </p>
+                  <div class="news-card__source">МЕДУЗА</div>
+              </div>
+            </div>
+
+            </div>
+            </div>
+            </div>
+
+          </section>
+      
+          <footer class="footer screen_desktop">
+            <p class="footer__copyright">&copy; 2020 Supersite, Powered by News API</p>
+            <nav class="footer__nav">
+              <ul class="footer__link-container">
+                <li class="footer__list-item"><a class="footer__link" href="index.html">Главная</a></li>
+                <li class="footer__list-item"><a target="_blank" class="footer__link" href="https://praktikum.yandex.ru">Яндекс.Практикум</a></li>
+              </ul>
+            </nav>  
+            <nav class="footer__social">
+              <ul class="footer__link-container">
+                <li class="footer__list-item">
+                  <a class="footer__link footer__link_social" href="https://github.com/" target="_blank">
+                      <img class="" src="images/github.svg" alt="GitHub"> 
+                  </a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__link footer__link_social" href="https://www.facebook.com/yandex.praktikum/" target="_blank">
+                      <img class="" src="images/fb.svg" alt="facebook">  
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </footer>
+      
+      </page>
+
+      <!-- MOBILE -->
+      <page class="page screen_mobile">
+        <header class="header header_theme_light header_screen_mobile screen_mobile">
+          <nav class="header header_screen_mobile">
+            <div class="header__placeholder">
+              <p class="header__logo header_theme_light header__logo_mobile">NewsExplorer</p>
+              <ul class="header__link-container">
+                
+                <li class="header__list-item">
+                  <a class="header__menu" href="./saved.html">
+                    <img class="" src="images/menu_black.svg" alt="Дополнительный экран меню мобильной версии">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+      
+        </header>
+
+        <section class="saved-lead screen_mobile">
+                           
+          <div class="saved-lead__header-container disabled">
+            <h1 class="saved-lead__subtitle search-results_screen_mobile screen_mobile">Сохранённые статьи</h1>
+            <h2 class="saved-lead__title search-results_screen_mobile screen_mobile">Грета, у вас 5 сохранённых статей</h2>
+            <h3 class="saved-lead__keywords search-results_screen_mobile screen_mobile">По ключевым словам: <span class="bold">&nbsp;Природа</span>, <span class="bold">Тайга</span> и <span class="bold">2-м другим</span></h3>
+          </div>  
+          
+          <div class="saved__results-container screen_mobile">
+          <div class="saved__results-narrow-container screen_mobile">
+          <div class="search-results__placeholder screen_mobile">
+
+          <!-- Классы тэгов button со словом message в названии по умолчанию выключены. Поставьте класс enabled, чтобы включить   -->
+          <!-- Классы тэгов button со словом icon в названии по умолчанию включены. Поставьте класс disabled, чтобы выключить   -->
+        
+          <div class="news-card">
+            <div class="news-card__image" style="background-image:url('images/image_08.jpg')">
+              <button class="news-card__message news-card__message_position_left enabled">
+                <p class="news-card__comment">Природа</p>
+              </button>
+            
+              <button class="news-card__delete-icon "></button>
+              <button class="news-card__message ">
+                <p class="news-card__comment">Убрать из сохраненных</p>
+              </button>
+
+              <button class="news-card__like-icon disabled"></button>
+              <button class="news-card__message ">
+                <p class="news-card__comment ">Войдите, чтобы сохранять статьи</p>
+              </button>
+            </div>
+          
+            <div class="news-card__text-container">
+              <div class="news-card__date">2 августа, 2019</div>
+              
+              <h3 class="news-card__name" >Национальное достояние – парки</h3>
+              <p class="news-card__text line-clamp-mob">
+                  В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
+                  национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
+              </p>
+              <div class="news-card__source">ЛЕНТА.РУ</div>
+
+              </div>
+              
+          </div>
+
+          <div class="news-card">
+            <div class="news-card__image" style="background-image:url('images/image_04.jpg')">
+              <button class="news-card__message news-card__message_position_left enabled">
+                <p class="news-card__comment">Природа</p>
+              </button>
+            
+              <button class="news-card__delete-icon "></button>
+              <button class="news-card__message ">
+                <p class="news-card__comment">Убрать из сохраненных</p>
+              </button>
+
+              <button class="news-card__like-icon disabled"></button>
+              <button class="news-card__message ">
+                <p class="news-card__comment ">Войдите, чтобы сохранять статьи</p>
+              </button>
+            </div>
+
+            <div class="news-card__text-container">
+              <div class="news-card__date">2 августа, 2019</div>
+            
+              <h3 class="news-card__name" >Лесные огоньки: история одной фотографии</h3>
+              <p class="news-card__text line-clamp-mob">
+                Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть
+                ускользающую красоту одного из местных чудес природы.
+              </p>
+              <div class="news-card__source">МЕДУЗА</div>
+              
+            </div>
+          </div>
+
+          <div class="news-card">
+            <div class="news-card__image" style="background-image:url('images/image_07.jpg')">
+              <button class="news-card__message news-card__message_position_left enabled">
+                <p class="news-card__comment">Тайга</p>
+              </button>
+
+              <button class="news-card__delete-icon "></button>
+              <button class="news-card__message ">
+                <p class="news-card__comment">Убрать из сохраненных</p>
+              </button>
+
+              <button class="news-card__like-icon disabled"></button>
+              <button class="news-card__message ">
+                <p class="news-card__comment ">Войдите, чтобы сохранять статьи</p>
+              </button>
+            </div>
+
+            <div class="news-card__text-container">
+              <div class="news-card__date">2 августа, 2019</div>
+            
+              <h3 class="news-card__name" >«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+              <p class="news-card__text line-clamp-mob">
+                  Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости
+                  их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...
+              </p>
+              <div class="news-card__source">РИА</div>
+            </div>
+          </div>
+
+          <div class="news-card">
+            <div class="news-card__image" style="background-image:url('images/image_08.jpg')">
+              <button class="news-card__message news-card__message_position_left enabled">
+                  <p class="news-card__comment">Парки</p>
+              </button>
+
+              <button class="news-card__delete-icon "></button>
+              <button class="news-card__message ">
+                <p class="news-card__comment">Убрать из сохраненных</p>
+              </button>
+
+              <button class="news-card__like-icon disabled"></button>
+              <button class="news-card__message ">
+                <p class="news-card__comment ">Войдите, чтобы сохранять статьи</p>
+              </button>
+            </div>
+
+            <div class="news-card__text-container">
+              <div class="news-card__date">2 августа, 2019</div>
+              
+              <h3 class="news-card__name" >Национальное достояние – парки</h3>
+              <p class="news-card__text line-clamp-mob">
+                  В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
+                  национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
+              </p>
+              <div class="news-card__source">ЛЕНТА.РУ</div>
+            </div>
+          </div>
+
+          <div class="news-card">
+            <div class="news-card__image" style="background-image:url('images/image_04.jpg')">
+              <button class="news-card__message news-card__message_position_left enabled">
+                <p class="news-card__comment">Фотография</p>
+              </button>
+
+              <button class="news-card__delete-icon "></button>
+              <button class="news-card__message ">
+                <p class="news-card__comment">Убрать из сохраненных</p>
+              </button>
+
+              <button class="news-card__like-icon disabled"></button>
+              <button class="news-card__message ">
+                <p class="news-card__comment ">Войдите, чтобы сохранять статьи</p>
+              </button>
+            </div>
+
+            <div class="news-card__text-container">
+              <div class="news-card__date">2 августа, 2019</div>
+              
+                <h3 class="news-card__name" >Лесные огоньки: история одной фотографии</h3>
+                <p class="news-card__text line-clamp-mob">
+                  Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть
+                  ускользающую красоту одного из местных чудес природы.
+                </p>
+                <div class="news-card__source">МЕДУЗА</div>
+            </div>
+          </div>
+
+          </div>
+          </div>
+          </div>
+
+        </section>
+
+        <footer class="footer screen_mobile">
+          
+          <div class="footer__top-container">
+            <nav class="footer__nav">
+              <ul class="footer__link-container">
+                <li class="footer__list-item"><a class="footer__link" href="index.html">Главная</a></li>
+                <li class="footer__list-item"><a target="_blank" class="footer__link" href="https://praktikum.yandex.ru">Яндекс.Практикум</a></li>
+              </ul>
+            </nav>  
+            <nav class="footer__social">
+              <ul class="footer__link-container_screen_mobile">
+                <li class="footer__list-item">
+                  <a class="footer__link footer__link_social" href="https://github.com/" target="_blank">
+                      <img class="" src="images/github.svg" alt="GitHub"> 
+                  </a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__link footer__link_social" href="https://www.facebook.com/yandex.praktikum/" target="_blank">
+                      <img class="" src="images/fb.svg" alt="facebook">  
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <p class="footer__copyright">&copy; 2020 Supersite, Powered by News API</p>
+        </footer>
+      </page>
+    </div>
+  </body>      
+</html>

@@ -1,0 +1,19 @@
+.saved-lead__header-container {
+    background-color: white;
+    /* width: 100%; */
+    padding-bottom: 53px;
+    padding-left: calc( 8.33vw - 14px);
+}
+
+@media (min-width: 1440px) {
+    .saved-lead__header-container {
+        padding-left: calc( 50vw - 614px);
+    }
+}
+
+@media (max-width: 640px) {
+    .saved-lead__header-container {
+        padding-bottom: 32px;
+    }
+}
+

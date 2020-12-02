@@ -1,0 +1,18 @@
+.news-card__text-container {
+    margin: .83rem .9rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    height: 10.93rem;
+    
+}
+
+@media (max-width:640px) {
+    .news-card__text-container {
+        width: 82vw;
+        max-width: 324px;
+        min-height: 244px;
+    }
+}

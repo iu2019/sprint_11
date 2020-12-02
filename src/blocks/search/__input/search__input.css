@@ -1,0 +1,39 @@
+.search__input {
+    width: 31.3vw;
+    height: 94%;
+    max-width: 440px;
+    max-height: 64px;
+
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: .67rem;
+    line-height: .92rem;
+    color: #1A1B22;
+    padding-left: 2vw;
+
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border: none;
+}
+
+.search__input::before {
+    color: #B6BCBF;
+    border: none;
+}
+
+.search__input:focus {
+    
+    outline: none;
+}
+
+.search__input_screen_mobile {
+    width: 82.5vw;
+    padding-left: 4vw;
+    height: 56px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+
+    font-size: 16px;
+    line-height: 60px; /* хотя на самом деле 22 */
+    max-width: 545px;
+}

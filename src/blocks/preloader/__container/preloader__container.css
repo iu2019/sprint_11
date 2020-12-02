@@ -1,0 +1,24 @@
+.preloader__container {
+	/* margin: calc( 35vw + 80px) auto 0 auto; */
+	/* min-height: 0vh; */
+    /* background-color: #F5F6F7; */
+    /* background-color: transparent;
+	
+	overflow: hidden;
+	position: relative; */
+
+	max-height: 200px;
+    margin-top: 0;
+    /* margin: 500px; */
+    /* min-height: 100vh; */
+    /* background-color: #333; */
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+}
+
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}

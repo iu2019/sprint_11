@@ -1,0 +1,16 @@
+.header__logo {
+    font-family: RoboSlab;
+    font-size: .83rem;
+    line-height: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header__logo_mobile {
+    font-size: 16px;
+    line-height: 24px;
+    
+}

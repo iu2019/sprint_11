@@ -1,0 +1,40 @@
+.news-card__message {
+    background-color: #FFF;
+    border: none;
+    width: auto;
+    /* 7.6rem; */
+    height: 1.67rem;
+    position: absolute;
+    top: 1rem;
+    right: 2.88rem;
+    cursor: none;
+
+    font-size: .42rem;
+
+    
+    /* transition: transform .3s linear; */
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    border-radius: 0.33rem;
+
+    display: none;
+  }
+  
+.news-card__message_position_left {
+  left: 1rem;
+  font-size: .58rem;
+}
+    
+  /* transform: scale(1.03); */
+  
+  
+  
+  /* .news-card:hover .news-card__like-icon {
+    display: block;
+  } */

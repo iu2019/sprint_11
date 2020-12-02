@@ -1,0 +1,16 @@
+.popup-mobile__content {
+  width: 100vw;
+  height: 286px;
+  background-color: #000;
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+  
+}
+
+@media screen and (max-width: 640px) {
+  .popup-mobile__content {
+    /* width: calc(100% - 60px); */
+    margin: 0;
+  }
+}

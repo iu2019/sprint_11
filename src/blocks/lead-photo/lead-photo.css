@@ -1,0 +1,16 @@
+.lead-photo {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    /* min-height: 576px; */
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+} 
+
+.lead-photo_screen_mobile {
+    min-height: 536px;
+    min-width: 250px;
+}

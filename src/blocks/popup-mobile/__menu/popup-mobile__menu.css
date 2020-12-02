@@ -1,0 +1,12 @@
+.popup-mobile__menu {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    line-height: 56px;
+    font-size: 18px;
+}
+
+.popup-mobile__menu_outline {
+    margin-left: calc( 50vw - 100px);
+    margin-right: calc( 50vw - 100px);
+}   

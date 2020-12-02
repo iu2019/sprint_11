@@ -1,0 +1,29 @@
+.header__list-item {
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    padding: 0 9px;
+    margin: 0 6px;
+    align-self: center;
+    justify-self: center;
+    
+
+    font-size: .75rem;
+    line-height: 24px;
+    font-family: Roboto;
+    font-weight: 600;
+}
+
+/* .header__list-item_outline {
+    border: 1px solid white;
+    border-radius: 100px;
+    line-height: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex;
+} */
+
+.header__list-item_active {
+    border-bottom: 3px solid white;
+    padding-bottom: calc(2.7vw - 10px);
+}

@@ -1,0 +1,17 @@
+.screen_desktop {
+    display: flex;
+}
+
+.screen_mobile {
+    display: none;
+}
+
+@media (max-width:640px) {
+    .screen_desktop {
+        display: none;
+    }
+
+    .screen_mobile {
+        display: flex;
+    }
+}

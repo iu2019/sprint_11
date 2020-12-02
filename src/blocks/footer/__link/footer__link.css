@@ -1,0 +1,37 @@
+.footer__link {
+    /* font-size: 24px;
+    font-weight: 400;
+    text-align: start; */
+    text-decoration: none;
+    list-style-type: none;
+    color: #1A1B22;
+    margin: 0 .6rem 0 .6rem;
+    
+}
+
+.footer__link_social {
+    margin:0
+}
+
+
+@media (max-width:640px) {
+    .footer__link {
+        margin: 0;
+    }
+}
+
+/* @media (max-width:990px) {
+    .footer__link {
+        font-size: 16px;
+        line-height: 27px; 
+        text-decoration: none;
+    }
+}
+
+@media (max-width:703px) { 
+    .footer__link {
+        /* font-size: 24px;
+        line-height: 54px; 
+        text-decoration: none;
+    }
+} */

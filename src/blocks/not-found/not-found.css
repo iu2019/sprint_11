@@ -1,0 +1,14 @@
+@import url(./__face/not-found__face.css);
+@import url(./__header/not-found__header.css);
+@import url(./__text/not-found__text.css);
+
+.not-found {
+    margin: 3.6rem auto 3.33rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 14.8rem;
+    background-color: #F5F6F7;
+}

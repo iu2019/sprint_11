@@ -1,0 +1,28 @@
+@import url(./__content/popup-mobile__content.css);
+@import url(./__content_show-pic/popup-mobile__content_show-pic.css);
+@import url(./__close/popup-mobile__close.css);
+@import url(./__title/popup-mobile__title.css);
+@import url(./__form/popup-mobile__form.css);
+@import url(./__input/popup-mobile__input.css);
+@import url(./__button/popup-mobile__button.css);
+@import url(./__button_active/popup-mobile__button_active.css);
+@import url(./__link-container/popup-mobile__link-container.css);
+@import url(./__list-item/popup-mobile__list-item.css);
+@import url(./__menu/popup-mobile__menu.css);
+@import url(./_is-opened/popup-mobile_is-opened.css);
+@import url(./_type_edit/popup-mobile_type_edit.css);
+
+.popup-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  display: none;
+  z-index: 2;
+}
+

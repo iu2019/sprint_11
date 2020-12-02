@@ -1,0 +1,24 @@
+@import url('./__title/lead__title.css');
+@import url('./__subtitle/lead__subtitle.css');
+
+.lead {
+    /* margin-top: 3.34rem; */
+    margin-top: calc(-3.25rem + 11vw);
+    margin-bottom: calc(-3.25rem + 11vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 42vw;
+    
+    color: white;
+
+    font-family: 'Inter', 'Roboto', 'RobotoSlab', 'SourceSansPro' ;
+}
+
+.lead_screen_mobile {
+    margin-top: 30px;
+    margin-bottom: 32px;
+    width: 89vw;
+    min-width: 225px;
+}

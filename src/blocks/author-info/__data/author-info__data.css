@@ -1,0 +1,16 @@
+.author-info__data {
+  max-width: 600px;
+  margin-left: 0;
+  width: 41.67vw;
+
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 640px) {
+  .author-info__data {
+    margin: 20px 0;
+    text-align: left;
+    width: 90vw;
+  }
+}

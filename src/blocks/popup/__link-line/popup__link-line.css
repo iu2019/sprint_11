@@ -1,0 +1,11 @@
+.popup__link-line {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: black;
+}
+
+.popup__link-line_func_signup_successful {
+    text-align: left;
+}

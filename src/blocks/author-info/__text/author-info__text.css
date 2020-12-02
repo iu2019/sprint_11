@@ -1,0 +1,24 @@
+.author-info__text {
+  margin: 20px 0 0 0;
+  font-size: 20px;
+  line-height: 25px;
+
+  width: 41.67vw;
+  max-width: 600px;
+
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: .75rem;
+  line-height: 1rem;
+}
+
+@media screen and (max-width: 640px) {
+  .author-info__text {
+    margin: 20px 0;
+    text-align: left;
+    width: 90vw;
+
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

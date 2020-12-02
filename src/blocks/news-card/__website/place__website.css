@@ -1,0 +1,34 @@
+.place__website {
+    grid-area: url;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: end;
+    text-decoration: none;
+
+    margin: 1.1% 0 0 0;
+}
+
+.place__website:visited {
+    color: #FFFFFF;
+}
+
+.place__website:link {
+    color: #FFFFFF;
+}
+
+.place__website:active {
+    color: #FFFFFF;
+}
+
+@media (max-width:780px) {
+    .place__website {
+        padding-left: 0px;
+    }
+}
+
+@media (max-width:703px) {
+    .place__website {
+        display: none;
+    }
+}
+

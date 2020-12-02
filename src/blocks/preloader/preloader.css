@@ -1,0 +1,9 @@
+@import url('./__circle/preloader__circle.css');
+@import url('./__text/preloader__text.css');
+@import url('./__container/preloader__container.css');
+@import url('./__restore-space/preloader__restore-space.css');
+
+.preloader {
+    margin: 0vw 0 0vw 0;
+    height: 120px;
+}

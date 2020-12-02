@@ -1,0 +1,17 @@
+.search-results__header {
+    margin: 0 0 0 0;
+    font-family: RobotoSlab;
+    font-weight: 400;
+    font-size: 1.67rem;
+    line-height: 1.92rem;
+
+    align-self: flex-start;
+}
+
+@media (max-width: 640px) {
+    .search-results__header {
+    margin-left: max(calc( 50vw - 180px - 10px), calc(5vw - 25px), 5px );
+    font-size: 30px;
+    line-height: 34px;
+    }
+}

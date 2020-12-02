@@ -1,0 +1,25 @@
+@import url(./__button/search__button.css);
+@import url(./__input/search__input.css);
+
+.search {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    z-index: 1;
+
+    margin-top: 4.4vw;
+    height: 4.4vw;
+    max-height: 64px;
+
+    /* margin-bottom: calc( 22vw - 246px); */
+    /* margin-bottom: 3.33rem; */
+
+    font-family: 'Inter', 'Roboto', 'RobotoSlab', 'SourceSansPro' ;
+}
+
+.search_screen_mobile {
+    flex-direction: column;
+    margin-top: max( calc(167.5vw - 450px), 30px);
+    height: 128px;
+    max-height: none;
+}

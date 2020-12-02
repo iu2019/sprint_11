@@ -1,0 +1,45 @@
+.place__para {
+    grid-area: article;
+    grid-column: 2;
+    grid-row: 2;
+
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 484px;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+@media (max-width:990px) {
+    .place__para {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 780px) {
+    .place__para {
+        font-size: 16px;
+        line-height: 27px;
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width:703px) { 
+    .place__para {
+        width: 95%;
+        margin: 0;
+        padding-left: 8px;
+        padding-bottom: 22px;
+        padding-top: 9px;
+    }
+}
+
+@media (max-width:360px) { 
+    .place__para {
+        padding-bottom: 20px;
+        padding-top: 5px;
+    }
+}

@@ -1,0 +1,8 @@
+.news-card__name {
+    margin: .5rem 0 0 0;
+    font-family: RobotoSlab;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.25rem;
+    color: #1A1B22;
+}

@@ -1,0 +1,103 @@
+@import url('./__article/place__article.css');
+@import url('./__image/news-card__image.css');
+@import url('./__para/place__para.css');
+@import url('./__title/place__title.css');
+@import url('./__url/place__url.css');
+@import url('./__website/place__website.css');
+@import url('./__url-heading/place__url-heading.css');
+
+@import url('./__image/news-card__image.css');
+@import url('./__delete-icon/news-card__delete-icon.css');
+@import url('./__like-icon/news-card__like-icon.css');
+@import url('./__message/news-card__message.css');
+@import url('./__comment/news-card__comment.css');
+@import url('./__text-container/news-card__text-container.css');
+@import url('./__date/news-card__date.css');
+@import url('./__name/news-card__name.css');
+@import url('./__text/news-card__text.css');
+@import url('./__source/news-card__source.css');
+@import url('../../vendor/fonts.css');
+
+.news-card {
+    margin: 0;
+    padding: 0;
+       
+    width: 100%;
+    /* width: 27.78%; */
+    /* max-width: 500px; */
+    /* height: 576px; */
+    /* min-height: 360px; */
+    /* height: 25vw; */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    position: relative;
+        
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    background-color: #fff;
+
+    font-family: 'Inter', 'Roboto', 'RobotoSlab', 'SourceSansPro' ;
+}
+
+@media (max-width:640px) {
+    .news-card {
+        width: 90vw;
+        max-width: 360px;
+    }
+}
+/*
+@media (max-width:1274px) {
+    .news-card {
+        width: 95%;
+        grid-template-columns: 47% 50%;
+        grid-template-rows: auto 78%;
+        margin-top: 22px;
+        margin-bottom: 82px;
+
+        column-gap: 3%;
+        row-gap: 4%;
+    }
+}
+
+@media (max-width: 780px) {
+    .news-card {
+        grid-template-columns: 47% 50%;
+        margin-bottom: 17px;
+        margin-top: 57px;
+        max-width: 720px;
+        padding-left: 8px;
+        column-gap: 3%;
+        padding-bottom: 0;
+        grid-template-rows: auto;
+    }
+}
+
+@media (max-width: 760px) {
+    .news-card {
+        width: 94%;
+    }
+}
+
+@media (max-width:703px) { 
+    .news-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex:1;
+        justify-content: center;
+        margin-top: 3px;
+        row-gap: 30px;
+    }
+}
+
+@media (max-width:703px) { 
+    .news-card {
+        padding-left: 0;
+    }
+} */

@@ -1,0 +1,24 @@
+.header__link {
+    
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    padding: 0 9px;
+    margin: 0 6px;
+    align-self: center;
+    justify-self: center;
+    
+
+    font-size: .75rem;
+    line-height: 24px;
+    font-family: Roboto;
+    font-weight: 600;
+}
+
+.header__link_outline {
+    border: 1px solid white;
+    border-radius: 100px;
+    line-height: 40px;
+    padding: 5px 20px;
+    display: flex;
+}

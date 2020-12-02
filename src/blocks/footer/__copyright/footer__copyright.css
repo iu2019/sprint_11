@@ -1,0 +1,20 @@
+.footer__copyright {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: .67rem;
+    line-height: .92rem;
+    font-weight: 400;
+    text-align: start;
+    color: #B6BCBF;
+
+    margin-left: 7.2vw;
+}
+
+
+@media (max-width:640px) { 
+    .footer__copyright {
+        font-size: 16px;
+        line-height: 22px;
+        margin-left: 12px;
+    }
+}

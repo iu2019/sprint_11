@@ -1,0 +1,21 @@
+.news-card__source {
+    
+    /* position: absolute;
+    left: 1rem;
+    bottom: 1rem; */
+
+    font-family: RobotoSlab;
+    font-weight: 900;
+    font-size: .67rem;
+    line-height: .9rem;
+    color: #B6BCBF;
+
+    margin-top: auto;      
+}
+
+@media (max-width:640px) {
+    .news-card__source {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}

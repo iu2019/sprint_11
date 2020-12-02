@@ -1,0 +1,20 @@
+.lead__subtitle {
+    margin-top: 2.2vw;
+    margin-bottom: 0;
+
+    font-family: Roboto;
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 1rem;
+
+    max-width: min(37.8vw, 545px);
+    
+    z-index: 1;
+}
+
+.lead__subtitle_screen_mobile {
+    margin-top: 32px;
+    font-size: 18px;
+    line-height: 24px;
+    max-width: none;
+}

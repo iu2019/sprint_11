@@ -1,0 +1,11 @@
+.header__further-logo {
+    display: block;
+}
+
+/* .popup-mobile__close + .header__further-logo {
+    display: none;
+  } */
+
+.header__further-logo_none {
+    display: none;
+}

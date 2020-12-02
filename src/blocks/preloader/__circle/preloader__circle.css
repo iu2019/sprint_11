@@ -1,0 +1,34 @@
+.preloader__circle {
+	/* display: block;
+	width: 50px;
+	height: 50px;
+	border: 2px solid #444;
+	border-bottom-color: #888;
+	
+	border-radius: 50%;
+	
+	position: absolute;
+	top: calc(35vw - 320px); 
+	top: 100px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	
+	animation: spin .75s infinite linear; */
+
+
+	display: block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #B6BCBF;
+    border-bottom-color: #888;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    animation: spin .75s infinite linear;
+}
