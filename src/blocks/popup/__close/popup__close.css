@@ -1,0 +1,14 @@
+.popup__close {
+  width: 26px;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .popup__close {
+    top: -46px;
+    right: 24px;
+  }
+}

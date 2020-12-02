@@ -1,0 +1,44 @@
+.button {
+  width: 12rem;
+  height: 2.67rem;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  line-height: 24px;
+  display: block;
+  cursor: pointer;
+  
+  font-family: Roboto;
+  font-weight: 600;
+  border-radius: 80px;
+  border: none;
+
+  margin: 0 auto 3.33rem auto;
+
+}
+
+.button:hover {
+  background-color: rgba(1, 1, 1, .1);
+}
+
+.button_screen_mobile {
+  width: 86vw;
+}
+
+/* .search__button {
+  width: 11.7vw;
+  height: 100%;
+  max-width: 168px;
+  max-height: 64px;
+
+  font-family: Roboto;
+  font-weight: 400;
+  border-radius: 100px;
+  border: none;
+  background-color: #2F71E5;
+  color: white;
+  transform: translate(-50px, 0px);
+
+  font-size: .75rem;
+  line-height: 1rem;
+} */

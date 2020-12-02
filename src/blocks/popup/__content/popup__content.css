@@ -1,0 +1,23 @@
+.popup__content {
+  width: 430px;
+  height: 380px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+  padding: 34px 36px;
+}
+
+@media screen and (max-width: 640px) {
+  .popup__content {
+    width: 100%;
+  }
+}
+
+.popup__content_func_signup {
+  height: 458px;
+}
+
+.popup__content_func_signup_successful {
+  height: 182px;
+}

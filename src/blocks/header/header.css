@@ -1,0 +1,52 @@
+@import url('./__logo/header__logo.css');
+@import url('./__placeholder/header__placeholder.css');
+@import url('./__list-item/header__list-item.css');
+@import url('./__link-container/header__link-container.css');
+@import url('./__link/header__link.css');
+@import url('./__exit-logo/header__exit-logo.css');
+@import url('./__further-logo/header__further-logo.css');
+
+@import url('../../vendor/fonts.css');
+
+.header {
+  width: 100%;
+  height: 5.5vw;
+  margin: 0;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #A5A5A5;
+  z-index: 0;
+  background-color:transparent;
+
+  font-family: 'Inter', 'Roboto', 'RobotoSlab', 'SourceSansPro' ;
+}
+
+.header_theme_dark {
+  color: #FFF;
+  background-color:transparent;
+}
+
+.header_theme_light {
+  color: #1A1B22;
+  background-color:white;
+  border-color: #1A1B22;
+   
+}
+
+@media (max-width:1000px) {
+  .header_theme_light {
+    line-height: 28px;
+  }
+}
+
+.header_screen_mobile {
+  height: 56px; /* 56px - 2*16px */
+  font-size: 16px;
+  line-height: 24px;
+  /* margin: 16px 8px 16px 8px; */
+  /* width: 90%; */
+
+  min-width: 250px;
+}
